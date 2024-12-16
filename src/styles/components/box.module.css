@@ -1,0 +1,7 @@
+.root {
+  @apply box-border max-w-7xl mx-auto p-2 w-full; 
+}
+
+.fullView {
+  @apply max-w-full w-full p-0
+}

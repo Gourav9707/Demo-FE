@@ -1,0 +1,59 @@
+.root {
+  @apply font-popins p-0 m-0 text-base max-md:text-xs font-normal text-black;
+}
+
+.popins {
+  @apply font-popins;
+}
+
+.font500 {
+  @apply font-medium;
+}
+
+.font600 {
+  @apply font-semibold;
+}
+
+.font700 {
+  @apply font-bold;
+}
+
+.font800 {
+  @apply font-extrabold;
+}
+
+.font900 {
+  @apply font-black;
+}
+
+.white {
+  @apply text-white;
+}
+
+.transform {
+  @apply uppercase;
+}
+
+.lg {
+  @apply text-lg;
+}
+
+.sm {
+  @apply text-sm;
+}
+
+.xs {
+  @apply text-xs;
+}
+
+.hide {
+  @apply hidden;
+}
+
+.addSpaceToRight {
+  @apply pr-2;
+}
+
+.noWrap {
+  @apply whitespace-nowrap;
+}

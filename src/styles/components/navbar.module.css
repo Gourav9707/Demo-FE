@@ -1,0 +1,23 @@
+.root {
+  @apply box-border bg-white flex justify-between;
+}
+
+.flexBox {
+  @apply flex gap-1 items-center;
+}
+
+.flexBoxBtw {
+  @apply flex gap-1 items-center justify-between;
+}
+
+.gap4 {
+  @apply gap-2;
+}
+
+.navBox > p {
+  @apply hover:scale-90 cursor-pointer;
+}
+
+.active {
+  @apply border-b-2 border-gray-600
+}

@@ -1,0 +1,7 @@
+.loader-container {
+  @apply min-h-[180px] flex items-center justify-center;
+}
+
+.loader {
+  @apply w-8 h-8 animate-spin rounded-full border-4 border-gray-400 border-t-gray-500;
+}

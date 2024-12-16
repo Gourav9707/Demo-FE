@@ -1,0 +1,7 @@
+.btnContainer {
+  @apply flex gap-2 box-border my-2 justify-center items-center;
+}
+
+.outputContainer {
+  @apply text-green-400 w-full h-[320px] overflow-auto bg-[#282C34] box-border p-2;
+}

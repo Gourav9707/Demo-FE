@@ -1,0 +1,19 @@
+.root {
+  @apply w-full bg-black box-border;
+}
+
+.hiddenDiv {
+  @apply hidden;
+}
+
+.flexBox {
+  @apply flex gap-1 items-center;
+}
+
+.flexBoxBtw {
+  @apply flex gap-1 items-center justify-between;
+}
+
+.gap4 {
+  @apply gap-4;
+}

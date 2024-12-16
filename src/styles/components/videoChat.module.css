@@ -1,0 +1,19 @@
+.meetingView {
+  @apply flex flex-col justify-center items-center gap-3;
+}
+
+.row {
+  @apply flex gap-1 justify-center items-center;
+}
+
+.row input {
+  @apply px-1 outline-none;
+}
+
+.joinScreenRoot {
+  @apply flex gap-1 justify-center items-center max-md:flex-col;
+}
+
+.videoContainer {
+  @apply flex gap-2 my-3 max-md:flex-wrap max-md:justify-center max-md:items-center;
+}

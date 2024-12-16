@@ -1,0 +1,13 @@
+.mainContainer {
+  @apply box-border w-full overflow-x-hidden;
+  height: calc(var(--vh, 1vh) * 100); /* Use dynamic viewport height */
+}
+
+.children {
+  @apply flex-1 w-full overflow-x-hidden;
+  height: calc(var(--vh, 1vh) * 100 - 96px); /* Dynamically calculate the height based on the available viewport */
+}
+
+.header {
+  @apply w-full;
+}

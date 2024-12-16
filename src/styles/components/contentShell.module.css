@@ -1,0 +1,7 @@
+.root {
+  @apply h-full w-full overflow-auto box-border bg-slate-200;
+}
+
+.content {
+  @apply w-full h-full;
+}
