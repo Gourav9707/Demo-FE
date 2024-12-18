@@ -32,7 +32,8 @@ const Home = () => {
 
       console.log(data);
       setOutput(data?.result || data.output.join(","));
-    } catch (error) {
+    } catch (e) {
+      console.log(e)
       setOutput("Error executing the code.");
     }
   };

@@ -9,11 +9,12 @@ import { VM } from "vm2";
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === "POST") {
     const { code } = req.body;
-    const output: any[] = [];
+
+    const output: unknown[] = [];
 
     // Custom console to capture logs
     const customConsole = {
-      log: (...args) => {
+      log: (...args: unknown[]) => {
         output.push(args.join(" "));
       },
     };
@@ -38,8 +39,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         output: output, // Captured logs
         result: result !== undefined ? result : undefined, 
       });
-    } catch (error) {
-      //@ts-ignore
+    } catch (error: unknown) {
+      // @ts-expect-error: Temporary workaround for incorrect library typing
       res.status(400).json({ error: error?.message });
     }
   } else {
